@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <title>Simple Interest Calculator</title>
-    <body>
+    <body onload="yearsArray(20)">
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
             <form>
@@ -14,7 +14,7 @@
                 <input type="range" id="rate" name="rate" min="0" max="20" step=".25">
                 <span id="rate_val">10.25%</span>  <br/>
                 <label for="years">No. of Years </label>
-                <select id="years" name="years" onclick="yearsArray(20)">
+                <select id="years" name="years">
                     <option selected value="1">1</option>
                 </select><br/>
                 <!-- Interest : <span id="result"></span><br/> -->
