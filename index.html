@@ -11,8 +11,8 @@
                 <label for="principal">Amount</label> 
                 <input type="number" name="principal" id="principal">  <br/>
                 <label for="rate">Interest Rate</label>
-                <input type="range" id="rate" name="rate" min="0" max="20" step=".25">
-                <span id="rate_val">10.25%</span>  <br/>
+                <input id="rate" type="range"  name="rate" min="0" max="20" step=".25">
+                <span id="rate_val" onchange="updateRate()">10.25<br/>
                 <label for="years">No. of Years </label>
                 <select id="years" name="years">
                     <option selected value="1">1</option>
@@ -21,6 +21,8 @@
                 <button type="submit">Compute Interest</button>
             </form>
         </div>
-
+        <footer>
+            &#169; This Calculator belongs to Priya Suda
+        </footer>
     </body>
 </html>
