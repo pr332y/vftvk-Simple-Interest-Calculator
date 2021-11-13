@@ -12,5 +12,9 @@ h1{
     color: black;
     width: 300px;
     padding: 20px;
+    margin: auto;
+    border-radius: 25px;
+}
+footer{
     text-align: center;
 }
