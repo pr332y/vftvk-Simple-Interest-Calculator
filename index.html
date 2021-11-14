@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-    <head>
-        <script src="script.js"></script>
+    <head>        
         <link rel="stylesheet" href="style.css">
     </head>
     <title>Simple Interest Calculator</title>
-    <body onload="yearsArray(20)">
+    <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
             <form>
                 <label for="principal">Amount</label> 
-                <input type="number" name="principal" id="principal" required min="0">  <br/>
+                <input type="number" name="principal" id="principal" required min="1">  <br/>
                 <label for="rate">Interest Rate</label>
                 <input 
                     id="rate" 
@@ -19,17 +18,17 @@
                     min="0" max="20" step=".25" 
                     oninput="rate_val.value=rate.value"
                 >
-                <output name="rate_val" for="rate">10.25</output> <br/>
+                <output id="rate_val" name="rate_val" for="rate">10.25</output> <br/>
                 <label for="years">No. of Years </label>
                 <select id="years" name="years">
-                    <option selected value="1">1</option>
                 </select><br/>
-                <button type="submit">Compute Interest</button>
+                <span id="result"></span><br/>
+                <input type="button" value="Compute Interest" id="calculate">
             </form>
-            <span id="result"></span>
         </div>
         <footer>
             &#169; This Calculator belongs to Priya Suda
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
