@@ -6,10 +6,10 @@ document.getElementById("calculate").addEventListener("click",()=>{
     let interest = principal * years * rate /100
     let futureYear = new Date().getFullYear()+parseInt(years)
     let result=document.getElementById("result")
-    result.innerHTML=`If you deposit ${principal},\<br\>
-    at a rate of ${rate}%\<br\> 
-    You will receive an amount of ${interest} ,\<br\> 
-    in the year ${futureYear}`
+    result.innerHTML='If you deposit <span class="highlighted">'+principal+'</span><br/>'+
+                     'at a rate of <span class="highlighted">'+rate+'%</span><br/>'+
+                     'You will receive an amount of <span class="highlighted">'+interest+'</span><br/>'+
+                     'in the year <span class="highlighted">'+futureYear+'</span><br/>'
     result.style.display="block"
 })
 function yearsArray(num) {
