@@ -15,9 +15,11 @@ h1{
     margin: auto;
     border-radius: 25px;
 }
+/* hide this element initially */
 #result{
     display: none;
 }
+/* add formatting to the calculated values */
 .highlighted{
     background-color: yellow;
 }

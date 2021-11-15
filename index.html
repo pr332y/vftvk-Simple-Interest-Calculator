@@ -8,8 +8,9 @@
             <h1>Simple Interest Calculator</h1>
             <form>
                 <label for="principal">Amount</label> 
-                <input type="number" name="principal" id="principal" required min="1">  <br/>
+                <input type="number" name="principal" id="principal" required>  <br/>
                 <label for="rate">Interest Rate</label>
+                <!-- connect display value to input range using oninput event -->
                 <input 
                     id="rate" 
                     value="10.25" 
@@ -25,7 +26,7 @@
                 <span id="result"></span><br/>
                 <input type="button" value="Compute Interest" id="calculate">
             </form>
-            <p>&#169; This Calculator belongs to Priya Suda</p>
+            <footer>&#169; This Calculator belongs to Priya Suda</footer>
         </div>
         <script src="script.js"></script>
     </body>
