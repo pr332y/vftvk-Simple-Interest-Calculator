@@ -7,6 +7,7 @@ h1{
     color: gray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.25em;
+    font-weight: bold;
 }
 .maindiv{
     background-color: white;
@@ -18,7 +19,16 @@ h1{
 }
 label {
     display: inline-block;
-    width:100px;
+    width: 100px;
+}
+input{
+    padding-left: 10px;
+}
+#principal{
+    margin-bottom: 10px;
+}
+select{
+    margin-top: 10px;
 }
 output{
     display: inline-block;
@@ -30,4 +40,7 @@ output{
 /* add formatting to the calculated values */
 .highlighted{
     background-color: yellow;
+}
+footer{
+    margin-top: 5px;
 }
