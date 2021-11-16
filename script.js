@@ -11,10 +11,10 @@ document.getElementById("calculate").addEventListener("click",()=>{
         document.getElementById('principal').focus()
     } else {
         //display result and add html elements with class called highlighted to target for css formatting
-        result.innerHTML='If you deposit <span class="highlighted">'+principal+'</span><br/>'+
-                         'at a rate of <span class="highlighted">'+rate+'%</span><br/>'+
-                         'You will receive an amount of <span class="highlighted">'+interest+'</span><br/>'+
-                         'in the year <span class="highlighted">'+futureYear+'</span><br/>'
+        result.innerHTML='If you deposit <mark>'+principal+'</mark><br/>'+
+                         'at a rate of <mark>'+rate+'%</mark><br/>'+
+                         'You will receive an amount of <mark>'+interest+'</mark><br/>'+
+                         'in the year <mark>'+futureYear+'</mark><br/>'
         result.style.display="block"        
     }
     

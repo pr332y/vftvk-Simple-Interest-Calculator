@@ -52,7 +52,7 @@ output{
     display: none;
 }
 /* add formatting to the calculated values */
-.highlighted{
+mark{
     background-color: yellow;
 }
 footer{
