@@ -6,29 +6,43 @@ body{
 h1{
     color: gray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bold;
+    text-align: center;
 }
 .maindiv{
     background-color: white;
     color: black;
-    width: 300px;
+    width: 400px;
     padding: 20px;
     margin: auto;
     border-radius: 25px;
 }
+form{
+    display: table;
+}
+p{
+    display: table-row;
+}
 label {
-    display: inline-block;
+    display: table-cell;
     width: 100px;
+    text-align: right;
+    padding-right: 5px;
 }
 input{
-    margin-left: 10px;
+    display: table-cell;
+    /* margin-left: 10px; */
 }
 #principal{
     margin-bottom: 10px;
 }
+#rate{
+    margin-bottom: 15px;
+}
 select{
-    margin-top: 10px;
+    display: table-cell;
+    /* margin-top: 10px; */
 }
 output{
     display: inline-block;

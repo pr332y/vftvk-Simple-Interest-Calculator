@@ -7,22 +7,28 @@
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
             <form>
-                <label for="principal">Amount</label> 
-                <input type="number" name="principal" id="principal" required>  <br/>
-                <label for="rate">Interest Rate</label>
-                <!-- connect display value to input range using oninput event -->
-                <input 
+                <p>
+                    <label for="principal">Amount</label> 
+                    <input type="number" name="principal" id="principal" required>
+                </p>
+                <p>
+                    <label for="rate">Interest Rate</label>
+                    <!-- connect display value to input range using oninput event -->
+                    <input 
                     id="rate" 
                     value="10.25" 
                     type="range"  
                     name="rate" 
                     min="1" max="20" step=".25" 
                     oninput="rate_val.value=rate.value"
-                >
-                <output id="rate_val" name="rate_val" for="rate">10.25</output> <br/>
-                <label for="years">No. of Years </label>
-                <select id="years" name="years">
-                </select><br/>
+                    >
+                    <output id="rate_val" name="rate_val" for="rate">10.25</output> <br/>
+                </p>
+                <p>
+                    <label for="years">No. of Years </label>
+                    <select id="years" name="years"></select>
+                    </select><br/>
+                </p>
                 <span id="result"></span><br/>
                 <input type="button" value="Compute Interest" id="calculate">
             </form>
